@@ -34,11 +34,12 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       routes: {
-        "/": (context) => Home(),
+        //"/": (context) => Home(),
         "/work": (context) => Work(),
         "/experience": (context) => Experience(),
       },
-      initialRoute: "/",
+      //initialRoute: "/",
+      home: Home()
     );
   }
 }

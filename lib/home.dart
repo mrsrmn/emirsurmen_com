@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
   Home({Key key, this.title}) : super(key: key);
@@ -25,11 +26,7 @@ class _HomeState extends State<Home> {
             children: <Widget>[
               Text(
                   "Emir Sürmen",
-                  style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.white,
-                      fontFamily: "Inconsolata"
-                  )
+                  style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 25),
               ),
               Text(
                   "Welcome to my website",
@@ -48,11 +45,7 @@ class _HomeState extends State<Home> {
                         padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
                         child: ElevatedButton(
                             child: Text("Work",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  color: Colors.white,
-                                  fontFamily: "Inconsolata"
-                              ),
+                              style: GoogleFonts.inconsolata(color: Colors.white),
                             ),
                             style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(Colors.black),
@@ -71,11 +64,7 @@ class _HomeState extends State<Home> {
                       ),
                       ElevatedButton(
                           child: Text("Experience",
-                            style: TextStyle(
-                                fontSize: 15,
-                                color: Colors.white,
-                                fontFamily: "Inconsolata"
-                            ),
+                            style: GoogleFonts.inconsolata(color: Colors.white),
                           ),
                           style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all(Colors.black),
@@ -108,7 +97,7 @@ class _HomeState extends State<Home> {
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
                           ListTile(
-                            title: Text('Profiles', style: TextStyle(color: Colors.white, fontFamily: "Inconsolata"), textAlign: TextAlign.center,),
+                            title: Text('Profiles', style: GoogleFonts.inconsolata(color: Colors.white,), textAlign: TextAlign.center,),
                           ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.end,
@@ -124,7 +113,7 @@ class _HomeState extends State<Home> {
                                       children: [
                                         FaIcon(FontAwesomeIcons.github, color: Colors.white,),
                                         SizedBox(width: 5),
-                                        Text("GitHub", style: TextStyle(color: Colors.white, fontFamily: "Inconsolata"), textAlign: TextAlign.center,)
+                                        Text("GitHub", style: GoogleFonts.inconsolata(color: Colors.white), textAlign: TextAlign.center,)
                                       ],
                                     ),
                                   )
@@ -146,7 +135,7 @@ class _HomeState extends State<Home> {
                                       children: [
                                         FaIcon(FontAwesomeIcons.linkedin, color: Colors.blue),
                                         SizedBox(width: 5),
-                                        Text("LinkedIn", style: TextStyle(color: Colors.white, fontFamily: "Inconsolata"), textAlign: TextAlign.center,)
+                                        Text("LinkedIn", style: GoogleFonts.inconsolata(color: Colors.white), textAlign: TextAlign.center,)
                                       ],
                                     ),
                                   )
@@ -168,7 +157,7 @@ class _HomeState extends State<Home> {
                                       children: [
                                         FaIcon(FontAwesomeIcons.twitter, color: Colors.lightBlueAccent),
                                         SizedBox(width: 5),
-                                        Text("Twitter", style: TextStyle(color: Colors.white, fontFamily: "Inconsolata"), textAlign: TextAlign.center,)
+                                        Text("Twitter", style: GoogleFonts.inconsolata(color: Colors.white), textAlign: TextAlign.center,)
                                       ],
                                     ),
                                   )
@@ -190,7 +179,7 @@ class _HomeState extends State<Home> {
                                       children: [
                                         FaIcon(FontAwesomeIcons.stackOverflow, color: Colors.deepOrangeAccent),
                                         SizedBox(width: 5),
-                                        Text("Stack Overflow", style: TextStyle(color: Colors.white, fontFamily: "Inconsolata"), textAlign: TextAlign.center,)
+                                        Text("Stack Overflow", style: GoogleFonts.inconsolata(color: Colors.white), textAlign: TextAlign.center,)
                                       ],
                                     ),
                                   )
@@ -212,7 +201,7 @@ class _HomeState extends State<Home> {
                                       children: [
                                         FaIcon(FontAwesomeIcons.discord, color: Colors.blueAccent),
                                         SizedBox(width: 5),
-                                        Text("Discord", style: TextStyle(color: Colors.white, fontFamily: "Inconsolata"), textAlign: TextAlign.center,)
+                                        Text("Discord", style: GoogleFonts.inconsolata(color: Colors.white), textAlign: TextAlign.center,)
                                       ],
                                     ),
                                   )
@@ -234,7 +223,7 @@ class _HomeState extends State<Home> {
                                       children: [
                                         FaIcon(FontAwesomeIcons.python, color: Colors.yellow),
                                         SizedBox(width: 5),
-                                        Text("PyPI", style: TextStyle(color: Colors.white, fontFamily: "Inconsolata"), textAlign: TextAlign.center,)
+                                        Text("PyPI", style: GoogleFonts.inconsolata(color: Colors.white), textAlign: TextAlign.center,)
                                       ],
                                     ),
                                   )
