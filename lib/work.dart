@@ -184,7 +184,8 @@ class Work extends StatelessWidget {
                     ],
                   ),
                 ),
-              )
+              ),
+              Text("And more...", style: GoogleFonts.inconsolata(color: Colors.white)),
             ],
           ),
         )

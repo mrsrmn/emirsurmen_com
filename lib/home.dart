@@ -62,27 +62,64 @@ class _HomeState extends State<Home> {
                             }
                         ),
                       ),
-                      ElevatedButton(
-                          child: Text("Experience",
-                            style: GoogleFonts.inconsolata(color: Colors.white),
-                          ),
-                          style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all(Colors.black),
-                              shadowColor: MaterialStateProperty.all(Colors.white),
-                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                  RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10.0),
-                                      side: BorderSide(color: Colors.white)
-                                  )
-                              )
-                          ),
-                          onPressed: () {
-                            Navigator.pushNamed(context, "/experience");
-                          }
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                        child: ElevatedButton(
+                            child: Text("Experience",
+                              style: GoogleFonts.inconsolata(color: Colors.white),
+                            ),
+                            style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(Colors.black),
+                                shadowColor: MaterialStateProperty.all(Colors.white),
+                                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                    RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10.0),
+                                        side: BorderSide(color: Colors.white)
+                                    )
+                                )
+                            ),
+                            onPressed: () {
+                              Navigator.pushNamed(context, "/experience");
+                            }
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                        child: ElevatedButton(
+                            child: Text("Education",
+                              style: GoogleFonts.inconsolata(color: Colors.white),
+                            ),
+                            style: ButtonStyle(
+                                backgroundColor: MaterialStateProperty.all(Colors.black),
+                                shadowColor: MaterialStateProperty.all(Colors.white),
+                                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                    RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10.0),
+                                        side: BorderSide(color: Colors.white)
+                                    )
+                                )
+                            ),
+                            onPressed: () {
+                              Navigator.pushNamed(context, "/education");
+                            }
+                        ),
                       ),
                     ],
                   )
               ),
+
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                child: Column(
+                  children: <Widget>[
+                    Text('About Me', style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 20), textAlign: TextAlign.center),
+                    Text("Hi, I am Emir and I'm living in Istanbul, Turkey. I enjoy programming in my spare time.\n I know 3 languages; Dart, Python and C#. I am a proficient in Python."
+                        " \nI am currently working on Flask (Python) web apps and Flutter (Dart) Android / iOS application.",
+                        style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 15), textAlign: TextAlign.center),
+                  ],
+                ),
+              ),
+
               Padding(
                   padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
                   child: Container(

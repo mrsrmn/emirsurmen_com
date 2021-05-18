@@ -63,43 +63,8 @@ class Experience extends StatelessWidget {
       "date": "November 2020 - Today"
     }
   };
+  
 
-  /*
-  buildTimeline(var list) {
-    for (int j = list.length; j == 0; j--) {
-      return Container(
-        width: 1000,
-        child: Card(
-          color: Colors.black,
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
-              side: BorderSide(color: Colors.white)
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              ListTile(
-                title: Text(list[j.toString()]["title"], style: GoogleFonts.inconsolata(color: Colors.white),),
-                subtitle: Text(list[j.toString()]["description"], style: GoogleFonts.inconsolata(color: Colors.white),),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  TextButton(
-                    child: Text(list[j.toString()]["date"], style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 16)),
-                    onPressed: () {
-                    },
-                  ),
-                  SizedBox(width: 8),
-                ],
-              ),
-            ],
-          ),
-        ),
-      );
-    }
-  }
-  */
 
   @override
   Widget build(BuildContext context) {
@@ -113,11 +78,54 @@ class Experience extends StatelessWidget {
         title: Text("Experience", style: GoogleFonts.inconsolata(color: Colors.white)),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-              Text("Coming soon", style: TextStyle(fontSize: 27, color: Colors.white, fontFamily: "Inconsolata"))
-          ],
+        child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    width: 1000,
+                    child: ListView.builder(
+                        physics: ScrollPhysics(),
+                        shrinkWrap: true,
+                        itemCount: listOfThings.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          var item = listOfThings[index.toString()];
+
+                          return Container(
+                            width: 1000,
+                            child: Card(
+                              color: Colors.black,
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                  side: BorderSide(color: Colors.white)
+                              ),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  ListTile(
+                                    title: Text(item["title"], style: GoogleFonts.inconsolata(color: Colors.white),),
+                                    subtitle: Text(item["description"], style: GoogleFonts.inconsolata(color: Colors.white),),
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: <Widget>[
+                                      TextButton(
+                                        child: Text(item["date"], style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 16)),
+                                        onPressed: () {},
+                                      ),
+                                      SizedBox(width: 8),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        }
+                    ),
+                  )
+                ],
+              ),
         ),
       ),
     );

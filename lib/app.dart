@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'home.dart';
 import 'work.dart';
 import 'experience.dart';
+import 'education.dart';
 
 
 // ignore: must_be_immutable
@@ -37,6 +39,7 @@ class MyApp extends StatelessWidget {
         //"/": (context) => Home(),
         "/work": (context) => Work(),
         "/experience": (context) => Experience(),
+        "/education": (context) => Education(),
       },
       //initialRoute: "/",
       home: Home()
