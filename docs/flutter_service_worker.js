@@ -3,25 +3,24 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/apple-touch-icon.png": "6b99b3bbe6bc99a25625f112a43953bd",
-"assets/AssetManifest.json": "a87da70dc2164c797d3b51e69a1deb77",
+  "assets/AssetManifest.json": "a87da70dc2164c797d3b51e69a1deb77",
 "assets/assets/fonts/Average-Regular.ttf": "05ac1d5474d6a5d6144f3b8a05909bda",
 "assets/assets/fonts/Inconsolata-Regular.ttf": "39cba59a48ffa6eea39a5d5f9ec63df6",
 "assets/assets/fonts/KoHo-Bold.ttf": "1ac75a676eb95d073a415d3b6fa5f61d",
 "assets/FontManifest.json": "e51350b55d025427ba2b96d0c95657a9",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/icon.ico": "dba1149efe5c854f734226463d95d99b",
-"assets/NOTICES": "ab3612413d671093e6e322d17c975276",
+"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
+"assets/NOTICES": "042bbff7a419634d7ff9f0f70224f4ee",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "00bb2b684be61e89d1bc7d75dee30b58",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "4b6a9b7c20913279a3ad3dd9c96e155b",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dffd9504fcb1894620fa41c700172994",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"index.html": "c85f9a5b40dcbf6335cc7180f05afdfd",
-"/": "c85f9a5b40dcbf6335cc7180f05afdfd",
-"main.dart.js": "d9d4af0183819788ec9e26263c6f3f41",
-"manifest.json": "cbeecfb9779b0b96bb78070c761e13b0",
-"styles.css": "d4b5e66af1968a3bfc9684c0557fce6e",
+"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"index.html": "ff453ba73f31529c4e71f61e991178e0",
+"/": "ff453ba73f31529c4e71f61e991178e0",
+"main.dart.js": "5c69a2099f05656f0af4a7be458152e3",
+"manifest.json": "8dfe6e45532e9b03eb270aef1b0ffb7a",
 "version.json": "68db465ff52f2cea78cd5b2b4848c009"
 };
 
@@ -40,7 +39,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
