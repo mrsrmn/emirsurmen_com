@@ -1,16 +1,16 @@
 {
-    "name": "emirsurmen_com",
-    "short_name": "emirsurmen_com",
+    "name": "Emir Sürmen",
+    "short_name": "Emir Sürmen",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "My Website",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "assets",
             "sizes": "192x192",
             "type": "image/png"
         },
