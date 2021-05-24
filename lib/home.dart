@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
                   children: <Widget>[
                     Text('About Me', style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 20), textAlign: TextAlign.center),
                     Text("Hi, I am Emir and I'm living in Istanbul, Turkey. I enjoy programming in my spare time.\n I know 3 languages; Dart, Python and C#. I am a proficient in Python."
-                        " \nI am currently working on Flask (Python) web apps and Flutter (Dart) Android / iOS application.",
+                        " \nI am currently working on Flask (Python) web apps and Flutter (Dart) Android / iOS application. I am currently learning Kotlin.",
                         style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 15), textAlign: TextAlign.center),
                   ],
                 ),
