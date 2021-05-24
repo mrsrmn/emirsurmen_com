@@ -76,6 +76,7 @@ class Experience extends StatelessWidget {
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         title: Text("Experience", style: GoogleFonts.inconsolata(color: Colors.white)),
+        leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () => Navigator.pop(context), tooltip: "Back"),
       ),
       body: Center(
         child: SingleChildScrollView(

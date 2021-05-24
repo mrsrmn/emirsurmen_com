@@ -12,11 +12,12 @@ class Work extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(
-          color: Colors.white, //change your color here
+          color: Colors.white,
         ),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        title: Text("Work", style: GoogleFonts.inconsolata(color: Colors.white),),
+        title: Text("Work", style: GoogleFonts.inconsolata(color: Colors.white)),
+        leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () => Navigator.pop(context), tooltip: "Back"),
       ),
       body: Center(
         child: SingleChildScrollView(
