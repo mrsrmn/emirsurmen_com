@@ -186,39 +186,6 @@ class Work extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                width: 1000,
-                child: Card(
-                  color: Colors.black,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                      side: BorderSide(color: Colors.white)
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      ListTile(
-                        leading: FaIcon(FontAwesomeIcons.dice, color: Colors.pink),
-                        title: Text('Danger Dice', style: GoogleFonts.inconsolata(color: Colors.white),),
-                        subtitle: Text("The game is simple; Guess a dice number with your friends and the ones who couldn't guess it correctly, gets the punishment.", style: GoogleFonts.inconsolata(color: Colors.white),),
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          TextButton(
-                            child: Text("PLAY STORE PAGE", style: GoogleFonts.inconsolata(color: Colors.white),),
-                            onPressed: () {
-                              launch("https://play.google.com/store/apps/details?id=com.emirs.danger_Dice");
-                            },
-                          ),
-                          SizedBox(width: 8),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
               Text("And more...", style: GoogleFonts.inconsolata(color: Colors.white)),
             ],
           ),
