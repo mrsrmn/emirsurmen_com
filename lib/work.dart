@@ -186,6 +186,39 @@ class Work extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+                width: 1000,
+                child: Card(
+                  color: Colors.black,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: BorderSide(color: Colors.white)
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      ListTile(
+                        leading: FaIcon(FontAwesomeIcons.building, color: Colors.yellow),
+                        title: Text('View MET', style: GoogleFonts.inconsolata(color: Colors.white),),
+                        subtitle: Text("See your favorite Metropolitan Museum of Art pieces with 1 click.", style: GoogleFonts.inconsolata(color: Colors.white),),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          TextButton(
+                            child: Text("SOURCE CODE", style: GoogleFonts.inconsolata(color: Colors.white),),
+                            onPressed: () {
+                              launch("https://github.com/MakufonSkifto/view_met");
+                            },
+                          ),
+                          SizedBox(width: 8),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
               Text("And more...", style: GoogleFonts.inconsolata(color: Colors.white)),
             ],
           ),
