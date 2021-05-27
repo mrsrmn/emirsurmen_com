@@ -66,6 +66,39 @@ class Work extends StatelessWidget {
                       side: BorderSide(color: Colors.white)
                   ),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      ListTile(
+                        leading: FaIcon(FontAwesomeIcons.discord, color: Colors.pink),
+                        title: Text('Meon Dashboard', style: GoogleFonts.inconsolata(color: Colors.white),),
+                        subtitle: Text("Dashboard for my Discord bot Meon made out of pure Python", style: GoogleFonts.inconsolata(color: Colors.white),),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          TextButton(
+                            child: Text("VIEW WEBSITE", style: GoogleFonts.inconsolata(color: Colors.white),),
+                            onPressed: () {
+                              launch("https://dashboard.meonbot.xyz");
+                            },
+                          ),
+                          SizedBox(width: 8),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                width: 1000,
+                child: Card(
+                  color: Colors.black,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: BorderSide(color: Colors.white)
+                  ),
+                  child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       ListTile(
