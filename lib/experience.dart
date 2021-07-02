@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -63,11 +65,15 @@ class Experience extends StatelessWidget {
       "date": "November 2020 - Today"
     }
   };
-  
+
 
 
   @override
   Widget build(BuildContext context) {
+    var list = Colors.primaries;
+
+    final _random = new Random();
+
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(
@@ -94,12 +100,13 @@ class Experience extends StatelessWidget {
                     var item = listOfThings[index.toString()];
 
                     return Container(
+                      padding: EdgeInsets.only(bottom: 10),
                       width: 1000,
                       child: Card(
                         color: Colors.black,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0),
-                            side: BorderSide(color: Colors.white)
+                            side: BorderSide(color: list[_random.nextInt(list.length)])
                         ),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,

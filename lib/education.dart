@@ -29,7 +29,7 @@ class Education extends StatelessWidget {
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
-                        side: BorderSide(color: Colors.white)
+                        side: BorderSide(color: Colors.red)
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -48,7 +48,7 @@ class Education extends StatelessWidget {
                             SizedBox(width: 8),
                           ],
                         ),
-                        Divider(color: Colors.white),
+                        Divider(color: Colors.red),
                         ListTile(
                           leading: FaIcon(FontAwesomeIcons.school, color: Colors.white),
                           title: Text("TED Istanbul Koleji (High School)", style: GoogleFonts.inconsolata(color: Colors.white),),
