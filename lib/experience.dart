@@ -60,9 +60,14 @@ class Experience extends StatelessWidget {
       "date": "November 2020"
     },
     "10": {
-      "title": "Learning Dart (Flutter)",
-      "description": "Dart is a pretty new language made by Google and Flutter is a cross-platform app development kit also made by Google. It allows you to make Android, iOS, Windows, and even web apps.",
-      "date": "November 2020 - Today"
+      "title": "Learned Flutter",
+      "description": "Dart is a pretty new language made by Google and Flutter is a cross-platform app development kit also made by Google. It allows you to make Android, iOS, Windows, Linux and even web apps.",
+      "date": "March 2021"
+    },
+    "11": {
+      "title": "Learning Kotlin",
+      "description": "I started learning to complete the \"The Ultimate Mobile Development Circle\" which consists of Flutter, Kotlin and Swift. I'm learning Kotlin to make Android apps",
+      "date": "May 2021 - Today"
     }
   };
 
@@ -85,56 +90,59 @@ class Experience extends StatelessWidget {
         leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () => Navigator.pop(context), tooltip: "Back"),
       ),
       body: Center(
-        child: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                width: 1000,
-                child: ListView.builder(
-                  physics: ScrollPhysics(),
-                  shrinkWrap: true,
-                  itemCount: listOfThings.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    var item = listOfThings[index.toString()];
+        child: Scrollbar(
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            physics: BouncingScrollPhysics(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  width: 1000,
+                  child: ListView.builder(
+                      physics: BouncingScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: listOfThings.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        var item = listOfThings[index.toString()];
 
-                    return Container(
-                      padding: EdgeInsets.only(bottom: 10),
-                      width: 1000,
-                      child: Card(
-                        color: Colors.black,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                            side: BorderSide(color: list[_random.nextInt(list.length)])
-                        ),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            ListTile(
-                              title: Text(item["title"], style: GoogleFonts.inconsolata(color: Colors.white),),
-                              subtitle: Text(item["description"], style: GoogleFonts.inconsolata(color: Colors.white),),
+                        return Container(
+                          padding: EdgeInsets.only(bottom: 10),
+                          width: 1000,
+                          child: Card(
+                            color: Colors.black,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: BorderSide(color: list[_random.nextInt(list.length)])
                             ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
-                                TextButton(
-                                  child: Text(item["date"], style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 16)),
-                                  onPressed: () {},
+                                ListTile(
+                                  title: Text(item["title"], style: GoogleFonts.inconsolata(color: Colors.white),),
+                                  subtitle: Text(item["description"], style: GoogleFonts.inconsolata(color: Colors.white),),
                                 ),
-                                SizedBox(width: 8),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: <Widget>[
+                                    TextButton(
+                                      child: Text(item["date"], style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 16)),
+                                      onPressed: () {},
+                                    ),
+                                    SizedBox(width: 8),
+                                  ],
+                                ),
                               ],
                             ),
-                          ],
-                        ),
-                      ),
-                    );
-                  }
-                ),
-              )
-            ],
+                          ),
+                        );
+                      }
+                  ),
+                )
+              ],
+            ),
           ),
-        ),
+        )
       ),
     );
   }
