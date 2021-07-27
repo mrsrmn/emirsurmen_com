@@ -25,6 +25,7 @@ class Education extends StatelessWidget {
               children: <Widget>[
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: Card(
                     color: Colors.black,
                     shape: RoundedRectangleBorder(

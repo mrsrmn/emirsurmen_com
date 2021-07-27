@@ -99,6 +99,7 @@ class Experience extends StatelessWidget {
               children: <Widget>[
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: ListView.builder(
                       physics: BouncingScrollPhysics(),
                       shrinkWrap: true,

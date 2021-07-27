@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -29,6 +30,7 @@ class Work extends StatelessWidget {
               children: <Widget>[
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: Card(
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -61,6 +63,7 @@ class Work extends StatelessWidget {
                 ),
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: Card(
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -94,6 +97,7 @@ class Work extends StatelessWidget {
                 ),
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: Card(
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -126,6 +130,7 @@ class Work extends StatelessWidget {
                 ),
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: Card(
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -158,6 +163,7 @@ class Work extends StatelessWidget {
                 ),
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: Card(
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -190,6 +196,7 @@ class Work extends StatelessWidget {
                 ),
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: Card(
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -223,6 +230,7 @@ class Work extends StatelessWidget {
                 ),
                 Container(
                   width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
                   child: Card(
                     color: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -254,7 +262,52 @@ class Work extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text("And more...", style: GoogleFonts.inconsolata(color: Colors.white)),
+                Container(
+                  width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
+                  child: Card(
+                    color: Colors.black,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                        side: BorderSide(color: Colors.white)
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ListTile(
+                          leading: FaIcon(FontAwesomeIcons.googlePlay, color: Colors.lightBlueAccent),
+                          title: Text('Google Play Apps', style: GoogleFonts.inconsolata(color: Colors.white)),
+                          subtitle: Text("See all of me and my friends' apps released on Google Play Store", style: GoogleFonts.inconsolata(color: Colors.white),),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            TextButton(
+                              child: Text("VISIT DEVELOPER PAGE", style: GoogleFonts.inconsolata(color: Colors.white),),
+                              onPressed: () {
+                                launch("https://play.google.com/store/apps/dev?id=7307516551412925597");
+                              },
+                            ),
+                            SizedBox(width: 8),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 10, top: 10),
+                  child: RichText(
+                    text: TextSpan(
+                      text: "And more...",
+                      style: GoogleFonts.inconsolata(color: Colors.white),
+                      recognizer: TapGestureRecognizer()..onTap = () {
+                        launch("https://github.com/MakufonSkifto?tab=repositories");
+                      }
+                    )
+                  ),
+                )
               ],
             ),
           ),

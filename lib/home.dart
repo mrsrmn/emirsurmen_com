@@ -110,7 +110,7 @@ class _HomeState extends State<Home> {
                 ),
 
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                   child: Column(
                     children: <Widget>[
                       Text('About Me', style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 20), textAlign: TextAlign.center),
@@ -124,6 +124,7 @@ class _HomeState extends State<Home> {
                 Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
                     child: Container(
+                      padding: EdgeInsets.only(left: 10, right: 10),
                       width: 1000,
                       child: Card(
                         color: Colors.black,
