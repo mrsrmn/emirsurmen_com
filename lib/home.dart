@@ -25,9 +25,12 @@ class _HomeState extends State<Home> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
-                  "Emir Sürmen",
-                  style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 25),
+                Padding(
+                  padding: EdgeInsets.only(top: 10),
+                  child: Text(
+                    "Emir Sürmen",
+                    style: GoogleFonts.inconsolata(color: Colors.white, fontSize: 25),
+                  ),
                 ),
                 Text(
                     "Welcome to my website",
@@ -122,7 +125,7 @@ class _HomeState extends State<Home> {
                 ),
 
                 Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                    padding: EdgeInsets.fromLTRB(0, 0, 5, 10),
                     child: Container(
                       padding: EdgeInsets.only(left: 10, right: 10),
                       width: 1000,
