@@ -296,6 +296,40 @@ class Work extends StatelessWidget {
                     ),
                   ),
                 ),
+                Container(
+                  width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
+                  child: Card(
+                    color: Colors.black,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                        side: BorderSide(color: Colors.white)
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ListTile(
+                          leading: FaIcon(FontAwesomeIcons.shoppingBag, color: Colors.purple),
+                          title: Text('Getirme', style: GoogleFonts.inconsolata(color: Colors.white)),
+                          subtitle: Text("Basically a ripoff of getir", style: GoogleFonts.inconsolata(color: Colors.white),),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            TextButton(
+                              child: Text("SOURCE CODE", style: GoogleFonts.inconsolata(color: Colors.white),),
+                              onPressed: () {
+                                launch("https://github.com/MakufonSkifto/getirme");
+                              },
+                            ),
+                            SizedBox(width: 8),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 Padding(
                   padding: EdgeInsets.only(bottom: 10, top: 10),
                   child: RichText(
