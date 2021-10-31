@@ -41,6 +41,39 @@ class Work extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         ListTile(
+                          leading: FaIcon(FontAwesomeIcons.hiking, color: Colors.lightGreenAccent,),
+                          title: Text("Harmony", style: GoogleFonts.inconsolata(color: Colors.white),),
+                          subtitle: Text("A fully functional social media app for sharing hiking places", style: GoogleFonts.inconsolata(color: Colors.white),),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: <Widget>[
+                            TextButton(
+                              child: Text("SOURCE CODE", style: GoogleFonts.inconsolata(color: Colors.white),),
+                              onPressed: () {
+                                launch("https://github.com/MakufonSkifto/harmony");
+                              },
+                            ),
+                            SizedBox(width: 8),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 1000,
+                  padding: EdgeInsets.only(left: 10, right: 10),
+                  child: Card(
+                    color: Colors.black,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                        side: BorderSide(color: Colors.white)
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        ListTile(
                           leading: FaIcon(FontAwesomeIcons.robot, color: Colors.pink,),
                           title: Text('Meon', style: GoogleFonts.inconsolata(color: Colors.white),),
                           subtitle: Text("A multi-purpose bot capable of moderating, displaying news, detailed coronavirus stats, Hypixel stats, and more.", style: GoogleFonts.inconsolata(color: Colors.white),),
