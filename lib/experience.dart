@@ -65,9 +65,19 @@ class Experience extends StatelessWidget {
       "date": "March 2021"
     },
     "11": {
-      "title": "Learning Kotlin",
+      "title": "Learned Kotlin",
       "description": "I started learning to complete the \"The Ultimate Mobile Development Circle\" which consists of Flutter, Kotlin and Swift. I'm learning Kotlin to make Android apps",
-      "date": "May 2021 - Today"
+      "date": "May 2021 - August 2021"
+    },
+    "12": {
+      "title": "Started Learning Swift",
+      "description": "I started learning Swift to make native iOS Apps.",
+      "date": "December 2021 - ?"
+    },
+    "13": {
+      "title": "Got 3rd Place in a Hackathon",
+      "description": "Me and my friend Göktürk attended to a Hackathon and got 3rd place.",
+      "date": "December 7th 2021"
     }
   };
 
