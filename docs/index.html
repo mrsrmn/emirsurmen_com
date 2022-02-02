@@ -34,6 +34,8 @@
   <meta property="og:description" content="My Website.">
   <meta property="og:title" content="Emir Sürmen"/>
 
+  <meta name="theme-color" content="#000000">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="main.dart.js"></script>
   <script>
@@ -110,8 +112,7 @@
           }
         });
 
-      // If service worker doesn't succeed in a reasonable amount of time,
-      // fallback to plaint <script> tag.
+
       setTimeout(() => {
         if (!scriptLoaded) {
           console.warn(
