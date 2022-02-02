@@ -34,7 +34,7 @@
   <meta property="og:description" content="My Website.">
   <meta property="og:title" content="Emir Sürmen"/>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RZKP10734"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="main.dart.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -42,6 +42,14 @@
     gtag('js', new Date());
 
     gtag('config', 'G-8RZKP10734');
+  </script>
+
+  <script>
+   i = 0;
+   setInterval(function() {
+       i = ++i % 4;
+       $("#loading").html("loading"+Array(i+1).join("."));
+   }, 500);
   </script>
 
   <style>
@@ -52,7 +60,7 @@
 </head>
 <body>
 <div style="color: white; font-family: 'Inconsolata', monospace; font-size: 15px; margin-left: 40px; margin-top: 40px">
-  <h2>loading</h2>
+  <h2 id="loading">loading</h2>
 </div>
 <script>
   var serviceWorkerVersion = '1370921540';
