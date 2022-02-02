@@ -9,7 +9,7 @@ class AboutText extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(bottom: 10),
         child: Text(
-          "hello! i am emir, i'm 16 and living in istanbul, turkey."
+          "hello! i am emir, i'm 16 and i live in istanbul, turkey."
           " i'm a mobile developer and"
           " i work with flutter.",
           style: GoogleFonts.inconsolata(

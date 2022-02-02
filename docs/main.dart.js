@@ -31389,7 +31389,7 @@ O(a,b){var s=null
 return new A.qM(A.a_B(new A.eE(new A.be(40,0,20,0),new A.we(B.f_,B.A9,B.en,B.fy,s,B.eL,s,A.b([new A.vc("emirsurmen","makufonskifto",s),new A.v6(s),new A.AA(s),new A.zU(s)],t.fQ),s),s),s,s),s)}}
 A.v6.prototype={
 O(a,b){var s=null
-return new A.f6(B.dt,s,s,new A.eE(new A.be(0,0,0,10),A.a5l("hello! i am emir, i'm 16 and living in istanbul, turkey. i'm a mobile developer and i work with flutter.",A.Mc(B.i,20),s),s),s)}}
+return new A.f6(B.dt,s,s,new A.eE(new A.be(0,0,0,10),A.a5l("hello! i am emir, i'm 16 and i live in istanbul, turkey. i'm a mobile developer and i work with flutter.",A.Mc(B.i,20),s),s),s)}}
 A.vc.prototype={
 O(a,b){var s=null,r=A.cl(0,0,3)
 return new A.f6(B.dt,s,s,A.a_J(new A.nZ(A.b([A.a5s(this.c,A.Mc(B.i,s)),A.a5s(this.d,A.Mc(B.i,s))],t.uZ),r,!0,s),s,B.bt,!0,B.Fp,s,s,B.au),s)}}
