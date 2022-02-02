@@ -1,5 +1,6 @@
 import 'package:emirsurmen_com/widgets/about_text.dart';
 import 'package:emirsurmen_com/widgets/animated_name.dart';
+import 'package:emirsurmen_com/widgets/resume_button.dart';
 import 'package:emirsurmen_com/widgets/socials_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -25,6 +26,7 @@ class _HomeState extends State<Home> {
               AnimatedName(text: "emirsurmen", text2: "makufonskifto"),
               AboutText(),
               SocialsWidget(),
+              ResumeButton()
             ],
           ),
         )

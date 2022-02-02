@@ -33,7 +33,6 @@ class SocialsWidget extends StatelessWidget {
           icon: Icon(FontAwesomeIcons.discord, color: Colors.white, size: 35),
           onPressed: () => launch("https://discord.com/users/444550944110149633"),
         ),
-        ResumeButton()
       ],
     );
   }
