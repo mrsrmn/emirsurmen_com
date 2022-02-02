@@ -31386,7 +31386,7 @@ A.p8.prototype={
 aG(){return new A.Do(B.n)}}
 A.Do.prototype={
 O(a,b){var s=null
-return new A.qM(A.a_B(new A.eE(new A.be(40,0,20,0),new A.we(B.f_,B.A9,B.en,B.fy,s,B.eL,s,A.b([new A.vc("emirsurmen","makufonskifto",s),new A.v6(s),new A.AA(s)],t.fQ),s),s),s,s),s)}}
+return new A.qM(A.a_B(new A.eE(new A.be(40,0,20,0),new A.we(B.f_,B.A9,B.en,B.fy,s,B.eL,s,A.b([new A.vc("emirsurmen","makufonskifto",s),new A.v6(s),new A.AA(s),new A.zU(s)],t.fQ),s),s),s,s),s)}}
 A.v6.prototype={
 O(a,b){var s=null
 return new A.f6(B.dt,s,s,new A.eE(new A.be(0,0,0,10),A.a5l("hello! i am emir, i'm 16 and living in istanbul, turkey. i'm a mobile developer and i work with flutter.",A.Mc(B.i,20),s),s),s)}}
@@ -31395,12 +31395,12 @@ O(a,b){var s=null,r=A.cl(0,0,3)
 return new A.f6(B.dt,s,s,A.a_J(new A.nZ(A.b([A.a5s(this.c,A.Mc(B.i,s)),A.a5s(this.d,A.Mc(B.i,s))],t.uZ),r,!0,s),s,B.bt,!0,B.Fp,s,s,B.au),s)}}
 A.zU.prototype={
 O(a,b){var s=null,r=A.IV(s,s,s,s,s,s,s,s,s,s,s,new A.c8(new A.be(15,15,15,15),t.ut),s,new A.c8(new A.cT(A.a3l(10),new A.d_(B.i,2,B.aX)),t.wv),s,s,s,s,s),q=A.pa(B.wG,B.i,s),p=A.a5l("my resume",A.Mc(B.i,20),s)
-return new A.eE(new A.be(5,0,0,0),new A.f6(B.dt,s,s,new A.Gb(new A.Qp(),s,s,s,r,B.G,s,!1,new A.Gc(p,q,s),s),s),s)}}
+return new A.eE(new A.be(0,10,0,0),new A.f6(B.dt,s,s,new A.Gb(new A.Qp(),s,s,s,r,B.G,s,!1,new A.Gc(p,q,s),s),s),s)}}
 A.Qp.prototype={
 $0(){return A.ja("https://docs.google.com/document/d/1p3_15SjFiUw12lkRUIn1Gjknq_QAqfZ3p0IsAhX-n9w/edit?usp=sharing")},
 $S:22}
 A.AA.prototype={
-O(a,b){return A.a10(A.b([A.xy(A.pa(B.wB,B.i,35),new A.SL(),B.Z),A.xy(A.pa(B.wD,B.i,35),new A.SM(),B.Z),A.xy(A.pa(B.wF,B.i,35),new A.SN(),B.Z),A.xy(A.pa(B.wE,B.i,35),new A.SO(),B.Z),A.xy(A.pa(B.wC,B.i,35),new A.SP(),B.Z),new A.zU(null)],t.fQ),B.en)}}
+O(a,b){return A.a10(A.b([A.xy(A.pa(B.wB,B.i,35),new A.SL(),B.Z),A.xy(A.pa(B.wD,B.i,35),new A.SM(),B.Z),A.xy(A.pa(B.wF,B.i,35),new A.SN(),B.Z),A.xy(A.pa(B.wE,B.i,35),new A.SO(),B.Z),A.xy(A.pa(B.wC,B.i,35),new A.SP(),B.Z)],t.fQ),B.en)}}
 A.SL.prototype={
 $0(){return A.ja("https://github.com/MakufonSkifto")},
 $S:22}
