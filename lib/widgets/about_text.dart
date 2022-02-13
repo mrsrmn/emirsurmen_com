@@ -9,9 +9,9 @@ class AboutText extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(bottom: 10),
         child: Text(
-          "hello! i am emir, i'm 16 and i live in istanbul, turkey."
+          "hello! i am emir, i'm 16 and i live in istanbul."
           " i'm a mobile developer and"
-          " i work with flutter.",
+          " i work with flutter & kotlin.",
           style: GoogleFonts.inconsolata(
             color: Colors.white,
             fontSize: 20
