@@ -75,14 +75,14 @@ class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProvider
           expand: _isExpanded,
           child: GestureDetector(
             onTap: () {
-              Clipboard.setData(ClipboardData(text: "MakufonSkifto#1414"));
+              Clipboard.setData(ClipboardData(text: "makus#1414"));
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
             child: AutoSizeText(
-              "MakufonSkifto#1414",
+              "makus#1414",
               style: GoogleFonts.inconsolata(
-                  color: Colors.white,
-                  fontSize: 27
+                color: Colors.white,
+                fontSize: 27
               ),
               maxFontSize: 27,
               minFontSize: 10,
