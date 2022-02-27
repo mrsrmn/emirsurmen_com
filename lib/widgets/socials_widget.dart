@@ -33,7 +33,12 @@ class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProvider
   }
 
   SnackBar snackBar = SnackBar(
-    content: Text("Copied Discord username to clipboard!"),
+    content: Text(
+      "Copied Discord username to clipboard!",
+      style: GoogleFonts.inconsolata(
+          color: Colors.white,
+      ),
+    ),
     behavior: SnackBarBehavior.floating,
   );
 
