@@ -25431,7 +25431,7 @@ r=r.b
 if(s)r.bU(0)
 else r.fB(0)},
 H(a,b){var s=null,r=A.wq(A.om(B.vO,B.h,35),new A.UV(),B.X),q=A.wq(A.om(B.vQ,B.h,35),new A.UW(),B.X),p=A.wq(A.om(B.vS,B.h,35),new A.UX(),B.X),o=A.wq(A.om(B.vR,B.h,35),new A.UY(),B.X),n=A.wq(A.om(B.vP,B.h,35),new A.UZ(this),B.X),m=this.r
-return A.NY(A.b([r,q,p,o,n,new A.o5(A.wh(s,new A.nm("MakufonSkifto#1414",A.og(B.h,27),10,27,1,s),B.ay,!1,s,s,s,s,s,s,s,s,s,s,s,new A.V_(this,b),s,s,s,s,s),m,s)],t.fQ),B.cs)}}
+return A.NY(A.b([r,q,p,o,n,new A.o5(A.wh(s,new A.nm("makus#1414",A.og(B.h,27),10,27,1,s),B.ay,!1,s,s,s,s,s,s,s,s,s,s,s,new A.V_(this,b),s,s,s,s,s),m,s)],t.fQ),B.cs)}}
 A.UV.prototype={
 $0(){return A.mX("https://github.com/MakufonSkifto")},
 $S:40}
@@ -25453,7 +25453,7 @@ $0(){var s=this.a
 s.r=!s.r},
 $S:4}
 A.V_.prototype={
-$0(){A.H8(new A.H2("MakufonSkifto#1414"))
+$0(){A.H8(new A.H2("makus#1414"))
 var s=this.b.W(t.Cu)
 s.toString
 s.f.AC(this.a.x)},
