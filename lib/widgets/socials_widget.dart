@@ -1,8 +1,42 @@
+import 'package:emirsurmen_com/utils/animation_utils.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class SocialsWidget extends StatelessWidget {
+import 'expanded_section.dart';
+
+class SocialsWidget extends StatefulWidget {
+  @override
+  State<SocialsWidget> createState() => _SocialsWidgetState();
+}
+
+class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProviderStateMixin {
+  AnimationController expandController;
+  Animation<double> animation;
+  AnimationUtils animationController;
+  bool _isExpanded = false;
+
+  @override
+  void initState() {
+    super.initState();
+
+    animationController = AnimationUtils(
+      isExpanded: _isExpanded,
+      parent: this
+    );
+    animationController.prepareAnimations();
+    animationController.runExpandCheck();
+  }
+
+  SnackBar snackBar = SnackBar(
+    content: Text("Copied Discord username to clipboard!"),
+    behavior: SnackBarBehavior.floating,
+  );
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -30,8 +64,26 @@ class SocialsWidget extends StatelessWidget {
         IconButton(
           padding: EdgeInsets.zero,
           icon: Icon(FontAwesomeIcons.discord, color: Colors.white, size: 35),
-          onPressed: () => launch("https://discord.com/users/444550944110149633"),
+          onPressed: () => setState(() {_isExpanded = !_isExpanded;}),
         ),
+        ExpandedSection(
+          expand: _isExpanded,
+          child: GestureDetector(
+            onTap: () {
+              Clipboard.setData(ClipboardData(text: "MakufonSkifto#1414"));
+              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            },
+            child: AutoSizeText(
+              "MakufonSkifto#1414",
+              style: GoogleFonts.inconsolata(
+                  color: Colors.white,
+                  fontSize: 27
+              ),
+              maxFontSize: 27,
+              maxLines: 1,
+            ),
+          )
+        )
       ],
     );
   }
