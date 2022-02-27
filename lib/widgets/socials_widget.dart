@@ -85,6 +85,7 @@ class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProvider
                   fontSize: 27
               ),
               maxFontSize: 27,
+              minFontSize: 10,
               maxLines: 1,
             ),
           )
