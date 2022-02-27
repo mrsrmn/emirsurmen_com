@@ -8,8 +8,8 @@ const RESOURCES = {
 "assets/assets/fonts/Inconsolata-Regular.ttf": "39cba59a48ffa6eea39a5d5f9ec63df6",
 "assets/assets/fonts/KoHo-Bold.ttf": "1ac75a676eb95d073a415d3b6fa5f61d",
 "assets/FontManifest.json": "e51350b55d025427ba2b96d0c95657a9",
-"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "9c4022ead734f6be8e5adb04423c98ea",
+"assets/fonts/MaterialIcons-Regular.otf": "7e7a6cccddf6d7b20012a548461d5d81",
+"assets/NOTICES": "862752fb4affc64f62417adbfca4d3dc",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "3241d1d9c15448a4da96df05f3292ffe",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "eaed33dc9678381a55cb5c13edaf241d",
@@ -23,7 +23,7 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "index.html": "c7af5b4d54dbc6b873fd112c133c630c",
 "/": "c7af5b4d54dbc6b873fd112c133c630c",
-"main.dart.js": "5b4f4b60705188842c1308cd0e528a43",
+"main.dart.js": "de8dbdd7df12698919ff940eab0adcdf",
 "manifest.json": "8dfe6e45532e9b03eb270aef1b0ffb7a",
 "version.json": "649b9a3a978344c83ef319cabbde32e8"
 };
