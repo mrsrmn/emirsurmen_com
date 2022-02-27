@@ -1,6 +1,8 @@
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class ResumeButton extends StatelessWidget {
   @override
@@ -11,17 +13,17 @@ class ResumeButton extends StatelessWidget {
         alignment: Alignment.centerLeft,
         child: TextButton.icon(
           style: ButtonStyle(
-              padding: MaterialStateProperty.all(EdgeInsets.all(15)),
-              shape: MaterialStateProperty.all(
-                  RoundedRectangleBorder(
-                    side: BorderSide(
-                      color: Colors.white,
-                      style: BorderStyle.solid,
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(10),
-                  )
+            padding: MaterialStateProperty.all(EdgeInsets.all(15)),
+            shape: MaterialStateProperty.all(
+              RoundedRectangleBorder(
+                side: BorderSide(
+                  color: Colors.white,
+                  style: BorderStyle.solid,
+                  width: 2,
+                ),
+                borderRadius: BorderRadius.circular(10),
               )
+            )
           ),
           icon: Icon(Icons.insert_drive_file, color: Colors.white),
           label: Text(
@@ -31,7 +33,13 @@ class ResumeButton extends StatelessWidget {
               fontSize: 20
             )
           ),
-          onPressed: () => launch("https://docs.google.com/document/d/1p3_15SjFiUw12lkRUIn1Gjknq_QAqfZ3p0IsAhX-n9w/edit?usp=sharing"),
+          onPressed: () {
+            html.AnchorElement anchorElement = html.AnchorElement(
+                href: "assets/Resume.pdf"
+            );
+            anchorElement.download = "Emir Sürmen.pdf";
+            anchorElement.click();
+          },
         ),
       ),
     );
