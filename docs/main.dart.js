@@ -25385,7 +25385,7 @@ A.u8.prototype={
 H(a,b){var s=null,r=this.c,q=new A.dP(Date.now(),!1),p=A.Yn(q)-A.Yn(r),o=A.Ym(q),n=A.Ym(r)
 if(n>o)--p
 else if(o===n)p=A.Yl(r)>A.Yl(q)?p-1:p
-return new A.d3(B.cP,s,s,new A.d7(new A.b0(0,0,0,10),A.QF("hello! i am emir, i'm "+p+" and i live in istanbul. i'm a mobile developer and i work with flutter & kotlin.",s,s,s,s,s,s,s,A.og(B.h,20),s,s,s),s),s)}}
+return new A.d3(B.cP,s,s,new A.d7(new A.b0(0,0,0,10),A.QF("hello! i am emir, i'm "+p+" and i live in istanbul. i'm a mobile developer and i mainly work with flutter. sometimes swift and kotlin too.",s,s,s,s,s,s,s,A.og(B.h,20),s,s,s),s),s)}}
 A.ue.prototype={
 H(a,b){var s=null,r=A.bR(0,0,3)
 return new A.d3(B.cP,s,s,A.HC(new A.nb(A.b([A.a1B(this.c,A.og(B.h,s)),A.a1B(this.d,A.og(B.h,s))],t.uZ),r,!0,s),s,B.aP,!0,B.Fm,s,s,B.a9),s)}}
