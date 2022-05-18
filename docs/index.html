@@ -15,7 +15,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="welcome to my website.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -81,11 +81,7 @@
   }
 
   if ('serviceWorker' in navigator) {
-    // Service workers are supported. Use them.
     window.addEventListener('load', function () {
-      // Wait for registration to finish before dropping the <script> tag.
-      // Otherwise, the browser will load the script multiple times,
-      // potentially different versions.
       var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
       navigator.serviceWorker.register(serviceWorkerUrl)
         .then((reg) => {
@@ -98,17 +94,12 @@
             });
           }
           if (!reg.active && (reg.installing || reg.waiting)) {
-            // No active web worker and we have installed or are installing
-            // one for the first time. Simply wait for it to activate.
             waitForActivation(reg.installing ?? reg.waiting);
           } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-            // When the app updates the serviceWorkerVersion changes, so we
-            // need to ask the service worker to update.
             console.log('New service worker available.');
             reg.update();
             waitForActivation(reg.installing);
           } else {
-            // Existing service worker is still good.
             console.log('Loading app from service worker.');
             loadMainDartJs();
           }
@@ -125,7 +116,6 @@
       }, 4000);
     });
   } else {
-    // Service workers not supported. Just drop the <script> tag.
     loadMainDartJs();
   }
 </script>
