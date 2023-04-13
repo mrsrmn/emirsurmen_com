@@ -49,22 +49,22 @@ class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProvider
         IconButton(
           padding: EdgeInsets.zero,
           icon: Icon(FontAwesomeIcons.github, color: Colors.white, size: 35),
-          onPressed: () => launch("https://github.com/MakufonSkifto"),
+          onPressed: () => launchUrl(Uri.parse("https://github.com/MakufonSkifto")),
         ),
         IconButton(
           padding: EdgeInsets.zero,
           icon: Icon(FontAwesomeIcons.linkedin, color: Colors.white, size: 35),
-          onPressed: () => launch("https://www.linkedin.com/in/emir-surmen/"),
+          onPressed: () => launchUrl(Uri.parse("https://www.linkedin.com/in/emir-surmen/")),
         ),
         IconButton(
           padding: EdgeInsets.zero,
           icon: Icon(FontAwesomeIcons.twitter, color: Colors.white, size: 35),
-          onPressed: () => launch("https://twitter.com/MakufonSkifto"),
+          onPressed: () => launchUrl(Uri.parse("https://twitter.com/makufon")),
         ),
         IconButton(
           padding: EdgeInsets.zero,
           icon: Icon(FontAwesomeIcons.stackOverflow, color: Colors.white, size: 35),
-          onPressed: () => launch("https://stackoverflow.com/users/12920146/emir-s%C3%BCrmen"),
+          onPressed: () => launchUrl(Uri.parse("https://stackoverflow.com/users/12920146/emir-s%C3%BCrmen")),
         ),
         IconButton(
           padding: EdgeInsets.zero,
