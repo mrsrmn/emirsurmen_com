@@ -6,7 +6,7 @@ class AnimatedName extends StatelessWidget {
   final String text;
   final String text2;
 
-  const AnimatedName({Key key, this.text, this.text2}) : super(key: key);
+  const AnimatedName({required this.text, required this.text2});
 
   @override
   Widget build(BuildContext context) {

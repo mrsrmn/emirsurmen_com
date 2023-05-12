@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class AnimationUtils {
   bool isExpanded;
-  AnimationController expandController;
-  Animation<double> animation;
+  late AnimationController expandController;
+  late Animation<double> animation;
   TickerProvider parent;
 
-  AnimationUtils({this.isExpanded, this.parent});
+  AnimationUtils({required this.isExpanded, required this.parent});
 
   void runExpandCheck() {
     if (isExpanded) {

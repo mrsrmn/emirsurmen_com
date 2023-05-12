@@ -5,10 +5,6 @@ import 'package:emirsurmen_com/widgets/socials_widget.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
-  Home({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   _HomeState createState() => _HomeState();
 }

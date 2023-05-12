@@ -15,9 +15,9 @@ class SocialsWidget extends StatefulWidget {
 }
 
 class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProviderStateMixin {
-  AnimationController expandController;
-  Animation<double> animation;
-  AnimationUtils animationController;
+  late AnimationController expandController;
+  late Animation<double> animation;
+  late AnimationUtils animationController;
   bool _isExpanded = false;
 
   @override
@@ -78,15 +78,18 @@ class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProvider
               Clipboard.setData(ClipboardData(text: "makus#1414"));
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
-            child: AutoSizeText(
-              "makus#1414",
-              style: GoogleFonts.inconsolata(
-                color: Colors.white,
-                fontSize: 27
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: AutoSizeText(
+                "makus#1414",
+                style: GoogleFonts.inconsolata(
+                  color: Colors.white,
+                  fontSize: 25
+                ),
+                maxFontSize: 25,
+                minFontSize: 10,
+                maxLines: 1,
               ),
-              maxFontSize: 27,
-              minFontSize: 10,
-              maxLines: 1,
             ),
           )
         )
