@@ -66,33 +66,6 @@ class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProvider
           icon: Icon(FontAwesomeIcons.stackOverflow, color: Colors.white, size: 35),
           onPressed: () => launchUrl(Uri.parse("https://stackoverflow.com/users/12920146/emir-s%C3%BCrmen")),
         ),
-        IconButton(
-          padding: EdgeInsets.zero,
-          icon: Icon(FontAwesomeIcons.discord, color: Colors.white, size: 35),
-          onPressed: () => setState(() {_isExpanded = !_isExpanded;}),
-        ),
-        ExpandedSection(
-          expand: _isExpanded,
-          child: GestureDetector(
-            onTap: () {
-              Clipboard.setData(ClipboardData(text: "makus#1414"));
-              ScaffoldMessenger.of(context).showSnackBar(snackBar);
-            },
-            child: Padding(
-              padding: const EdgeInsets.only(left: 10),
-              child: AutoSizeText(
-                "makus#1414",
-                style: GoogleFonts.inconsolata(
-                  color: Colors.white,
-                  fontSize: 25
-                ),
-                maxFontSize: 25,
-                minFontSize: 10,
-                maxLines: 1,
-              ),
-            ),
-          )
-        )
       ],
     );
   }
