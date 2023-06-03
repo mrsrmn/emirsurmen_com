@@ -21,13 +21,7 @@ class _HomeState extends State<Home> {
             children: [
               AnimatedName(text: "emirsurmen", text2: "makufonskifto"),
               AboutText(),
-              Row(
-                children: [
-                  SocialsWidget(),
-                  SizedBox(width: 5),
-                  ContactWidgets()
-                ],
-              )
+              SocialsWidget(),
             ],
           ),
         )

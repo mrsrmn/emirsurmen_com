@@ -1,72 +1,43 @@
-import 'package:emirsurmen_com/utils/animation_utils.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'expanded_section.dart';
+import 'contact_widgets.dart';
 
-class SocialsWidget extends StatefulWidget {
-  @override
-  State<SocialsWidget> createState() => _SocialsWidgetState();
-}
 
-class _SocialsWidgetState extends State<SocialsWidget> with SingleTickerProviderStateMixin {
-  late AnimationController expandController;
-  late Animation<double> animation;
-  late AnimationUtils animationController;
-  bool _isExpanded = false;
-
-  @override
-  void initState() {
-    super.initState();
-
-    animationController = AnimationUtils(
-      isExpanded: _isExpanded,
-      parent: this
-    );
-    animationController.prepareAnimations();
-    animationController.runExpandCheck();
-  }
-
-  SnackBar snackBar = SnackBar(
-    content: Text(
-      "Copied Discord username to clipboard!",
-      style: GoogleFonts.inconsolata(
-          color: Colors.white,
-      ),
-    ),
-    behavior: SnackBarBehavior.floating,
-  );
-
+class SocialsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        IconButton(
-          padding: EdgeInsets.zero,
-          icon: Icon(FontAwesomeIcons.github, color: Colors.white, size: 35),
-          onPressed: () => launchUrl(Uri.parse("https://github.com/MakufonSkifto")),
-        ),
-        IconButton(
-          padding: EdgeInsets.zero,
-          icon: Icon(FontAwesomeIcons.linkedin, color: Colors.white, size: 35),
-          onPressed: () => launchUrl(Uri.parse("https://www.linkedin.com/in/emir-surmen/")),
-        ),
-        IconButton(
-          padding: EdgeInsets.zero,
-          icon: Icon(FontAwesomeIcons.twitter, color: Colors.white, size: 35),
-          onPressed: () => launchUrl(Uri.parse("https://twitter.com/makufon")),
-        ),
-        IconButton(
-          padding: EdgeInsets.zero,
-          icon: Icon(FontAwesomeIcons.stackOverflow, color: Colors.white, size: 35),
-          onPressed: () => launchUrl(Uri.parse("https://stackoverflow.com/users/12920146/emir-s%C3%BCrmen")),
-        ),
-      ],
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Wrap(
+        runSpacing: 5,
+        alignment: WrapAlignment.start,
+        children: [
+          IconButton(
+            padding: EdgeInsets.zero,
+            icon: Icon(FontAwesomeIcons.github, color: Colors.white, size: 35),
+            onPressed: () => launchUrl(Uri.parse("https://github.com/MakufonSkifto")),
+          ),
+          IconButton(
+            padding: EdgeInsets.zero,
+            icon: Icon(FontAwesomeIcons.linkedin, color: Colors.white, size: 35),
+            onPressed: () => launchUrl(Uri.parse("https://www.linkedin.com/in/emir-surmen/")),
+          ),
+          IconButton(
+            padding: EdgeInsets.zero,
+            icon: Icon(FontAwesomeIcons.twitter, color: Colors.white, size: 35),
+            onPressed: () => launchUrl(Uri.parse("https://twitter.com/makufon")),
+          ),
+          IconButton(
+            padding: EdgeInsets.zero,
+            icon: Icon(FontAwesomeIcons.stackOverflow, color: Colors.white, size: 35),
+            onPressed: () => launchUrl(Uri.parse("https://stackoverflow.com/users/12920146/emir-s%C3%BCrmen")),
+          ),
+          ContactWidgets()
+        ],
+      ),
     );
   }
 }

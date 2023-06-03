@@ -35,7 +35,7 @@ class CustomButton extends StatelessWidget {
           text,
           style: GoogleFonts.inconsolata(
             color: Colors.white,
-            fontSize: 20
+            fontSize: 17
           )
         ),
         onPressed: onPressed
