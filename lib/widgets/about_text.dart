@@ -15,7 +15,7 @@ class AboutText extends StatelessWidget {
         child: Text(
           "hello! i am emir, i'm ${calculateAge(birthDate)} and i live in istanbul."
           " i'm a mobile developer and"
-          " i mainly work with flutter. sometimes swift and kotlin too.",
+          " i mainly work with flutter & swift.",
           style: GoogleFonts.inconsolata(
             color: Colors.white,
             fontSize: 20

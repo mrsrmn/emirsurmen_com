@@ -33716,7 +33716,7 @@ A.vw.prototype={
 R(a){var s=null,r=this.c,q=new A.ez(Date.now(),!1),p=A.a1A(q)-A.a1A(r),o=A.a1z(q),n=A.a1z(r)
 if(n>o)--p
 else if(o===n)p=A.a1y(r)>A.a1y(q)?p-1:p
-return new A.et(B.cq,s,s,new A.eP(new A.bh(0,0,0,10),A.a5Y("hello! i am emir, i'm "+p+" and i live in istanbul. i'm a mobile developer and i mainly work with flutter. sometimes swift and kotlin too.",A.NL(B.h,20),s),s),s)}}
+return new A.et(B.cq,s,s,new A.eP(new A.bh(0,0,0,10),A.a5Y("hello! i am emir, i'm "+p+" and i live in istanbul. i'm a mobile developer and i mainly work with flutter & swift.",A.NL(B.h,20),s),s),s)}}
 A.vE.prototype={
 R(a){var s=null,r=A.cv(0,0,3)
 return new A.et(B.cq,s,s,A.a0M(new A.nW(A.a([A.a67(this.c,A.NL(B.h,s)),A.a67(this.d,A.NL(B.h,s))],t.rr),r,!0,s),s,B.bn,!0,B.FV,s,s,B.au),s)}}
