@@ -18,9 +18,9 @@ class ContactWidgets extends StatelessWidget {
             icon: Icons.insert_drive_file,
             onPressed: () {
               html.AnchorElement anchorElement = html.AnchorElement(
-                  href: "assets/Resume.pdf"
+                  href: "assets/Emir-Sürmen-CV.pdf"
               );
-              anchorElement.download = "Emir Sürmen.pdf";
+              anchorElement.download = "Emir-Sürmen-CV.pdf";
               anchorElement.click();
             },
           ),
