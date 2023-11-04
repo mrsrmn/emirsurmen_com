@@ -1,0 +1,71 @@
+baseurl = "https://www.emirsurmen.com"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+disqusShortname = "emirs"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Emir Sürmen"
+  info = "Cross-Platform Developer"
+  description = "Emir Sürmen's Personal Website"
+  keywords = "blog,developer,personal, emir, sürmen, emirsürmen, emir sürmen, flutter, crossplatform, ios, android, mobile, mobiledevelopment, development, programmer"
+  avatarurl = "me.jpeg"
+
+  favicon_32 = "/assets/favicon-32x32.png"
+  favicon_16 = "/assets/favicon-16x16.png"
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "dark"
+  hidecolorschemetoggle = true
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/MakufonSkifto/"
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/emir-surmen/"
+[[params.social]]
+  name = "App Store"
+  icon = "fa fa-apple fa-2x"
+  weight = 2
+  url = "https://apps.apple.com/us/developer/emir-surmen/id1640995227"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/makufon/"
+[[params.social]]
+  name = "Instagram"
+  icon = "fa fa-instagram fa-2x"
+  weight = 3
+  url = "https://instagram.com/urban.peek/"
+
+
+[[menu.main]]
+  name = "Resume"
+  weight = 1
+  url  = "https://bahcesehir-my.sharepoint.com/:b:/g/personal/emir_surmen_bahcesehir_edu_tr/EV_2R6lY_oVKjwcDz60dR0gB9IVnaDxdSfuvI8D3CylwSA?e=hsKO0D"
+[[menu.main]]
+  name = "Contact Me"
+  weight = 2
+  url = "mailto:emirsurmen@gmail.com"
