@@ -47,17 +47,17 @@ style = "github-dark"
 [[params.social]]
   name = "App Store"
   icon = "fa fa-apple fa-2x"
-  weight = 2
+  weight = 3
   url = "https://apps.apple.com/us/developer/emir-surmen/id1640995227"
 [[params.social]]
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
-  weight = 3
+  weight = 4
   url = "https://twitter.com/makufon/"
 [[params.social]]
   name = "Instagram"
   icon = "fa fa-instagram fa-2x"
-  weight = 3
+  weight = 5
   url = "https://instagram.com/urban.peek/"
 
 
@@ -65,6 +65,10 @@ style = "github-dark"
   name = "Resume"
   weight = 1
   url  = "https://bahcesehir-my.sharepoint.com/:b:/g/personal/emir_surmen_bahcesehir_edu_tr/EV_2R6lY_oVKjwcDz60dR0gB9IVnaDxdSfuvI8D3CylwSA?e=hsKO0D"
+[[menu.main]]
+  name = "Work with Me"
+  weight = 1
+  url  = "https://www.upwork.com/freelancers/~01ca2aadcd98bded63?s=996364627857502209"
 [[menu.main]]
   name = "Contact Me"
   weight = 2
