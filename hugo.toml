@@ -38,7 +38,7 @@ style = "github-dark"
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/MakufonSkifto/"
+  url = "https://github.com/mrsrmn/"
 [[params.social]]
   name = "LinkedIn"
   icon = "fa fa-linkedin fa-2x"
